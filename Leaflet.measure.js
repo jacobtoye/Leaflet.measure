@@ -8,7 +8,7 @@ L.Control.Measure = L.Control.extend({
 	},
 
 	onAdd: function(map) {
-		var container = L.DomUtil.create('div', 'leaflet-draw-section'),
+		var container = L.DomUtil.create('div', 'leaflet-measure leaflet-draw-section'),
 			li, i;
 
 		// TODO: listen to draw stated event so we can disable in case someone starts drawing rather than measuring
