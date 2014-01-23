@@ -1,0 +1,7 @@
+.leaflet-measure-tooltip-marker {
+	border: 0;
+}
+
+.leaflet-measure-button {
+	background: transparent url('images/ruler.png') 0 0 no-repeat;
+}

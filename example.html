@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet.measure</title>
+
+	<link rel="stylesheet" href="libs/leaflet.css" />
+	<link rel="stylesheet" href="libs/leaflet.draw.css" />
+	<link rel="stylesheet" href="leaflet.measure.css" />
+
+	<script src="libs/leaflet-src.js"></script>
+	<script src="libs/leaflet.draw-custom.js"></script>
+
+	<script src="leaflet.measure.js"></script>
+</head>
+<body>
+	<div id="map" style="width: 800px; height: 600px; border: 1px solid #ccc"></div>
+	<button id="changeColor">Rectangle -> Blue</button>
+	<script>
+		var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png',
+			cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18}),
+			map = new L.Map('map', {layers: [cloudmade], center: new L.LatLng(-37.7772, 175.2756), zoom: 15 });
+
+			L.Control.measure().addTo(map);
+	</script>
+</body>
+</html>
